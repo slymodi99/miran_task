@@ -62,9 +62,9 @@ docker compose exec web python manage.py populate_db
 Create a `.env` file in the root directory with the following variables:
 ```env
 DEBUG=1
-DB_NAME=miran
-DB_USER=postgres
-DB_PASSWORD=123456
+DB_NAME=test
+DB_USER=test
+DB_PASSWORD=test
 DB_HOST=db
 DB_PORT=5432
 ```
