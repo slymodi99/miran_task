@@ -25,6 +25,8 @@ SECRET_KEY = config("SECRET_KEY")
 
 DEBUG = config("DEBUG", cast=bool)
 
+JWT_ALGORITHM = config("JWT_ALGORITHM", "HS256")
+
 ALLOWED_HOSTS = config(
     "ALLOWED_HOSTS",
     default="localhost,127.0.0.1",
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'orders',
     'products',
     'users',
@@ -57,6 +60,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'miran_e_commerce_task.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'mixins.authentication.JWTAuthentication',
+    ],
+}
 
 TEMPLATES = [
     {
