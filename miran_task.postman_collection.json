@@ -1,0 +1,881 @@
+{
+	"info": {
+		"_postman_id": "8dc46688-a48b-43ac-b850-754c9f9ad451",
+		"name": "miran_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16604004"
+	},
+	"item": [
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "get orders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDMsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE5NyJ9.INBpcHHOpMGBx6jIRRGZku4vN3pykKllJGD9glbDy9Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/?status=pending",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								""
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "pending"
+								},
+								{
+									"key": "customer_name",
+									"value": "kelly00",
+									"disabled": true
+								},
+								{
+									"key": "page_size",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "created_at_from",
+									"value": "2025-06-01",
+									"disabled": true
+								},
+								{
+									"key": "created_at_to",
+									"value": "2025-06-05",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDMsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE5NyJ9.INBpcHHOpMGBx6jIRRGZku4vN3pykKllJGD9glbDy9Q",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/orders/?status=pending",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"orders",
+										""
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "pending"
+										},
+										{
+											"key": "customer_name",
+											"value": "kelly00",
+											"disabled": true
+										},
+										{
+											"key": "page_size",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "created_at_from",
+											"value": "2025-06-01",
+											"disabled": true
+										},
+										{
+											"key": "created_at_to",
+											"value": "2025-06-05",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 01 Jul 2025 19:29:28 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2539"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"next\": \"http://127.0.0.1:8000/api/orders/?page=2&status=pending\",\n    \"previous\": null,\n    \"count\": 36,\n    \"num_pages\": 2,\n    \"current_page\": 1,\n    \"result\": [\n        {\n            \"id\": 1,\n            \"customer_name\": \"kelsey34\",\n            \"grand_total\": \"5618.98\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 5,\n            \"customer_name\": \"lisamullins\",\n            \"grand_total\": \"2175.70\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 11,\n            \"customer_name\": \"christopher78\",\n            \"grand_total\": \"2811.02\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 12,\n            \"customer_name\": \"sierra35\",\n            \"grand_total\": \"13838.91\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 18,\n            \"customer_name\": \"carolynmiller\",\n            \"grand_total\": \"13572.41\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 19,\n            \"customer_name\": \"callen\",\n            \"grand_total\": \"845.96\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 23,\n            \"customer_name\": \"brownlindsey\",\n            \"grand_total\": \"5983.35\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 26,\n            \"customer_name\": \"naguilar\",\n            \"grand_total\": \"9577.06\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 29,\n            \"customer_name\": \"cindy05\",\n            \"grand_total\": \"2315.22\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 31,\n            \"customer_name\": \"jeffreyarmstrong\",\n            \"grand_total\": \"1803.51\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 36,\n            \"customer_name\": \"lindsey30\",\n            \"grand_total\": \"6179.69\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 41,\n            \"customer_name\": \"bradleybradford\",\n            \"grand_total\": \"5784.50\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 42,\n            \"customer_name\": \"josephcollier\",\n            \"grand_total\": \"4425.23\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 52,\n            \"customer_name\": \"amy76\",\n            \"grand_total\": \"6169.05\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 54,\n            \"customer_name\": \"megansandoval\",\n            \"grand_total\": \"7091.23\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 56,\n            \"customer_name\": \"tvargas\",\n            \"grand_total\": \"3902.81\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 62,\n            \"customer_name\": \"gbrooks\",\n            \"grand_total\": \"9641.37\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 69,\n            \"customer_name\": \"donnarobinson\",\n            \"grand_total\": \"9649.51\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 70,\n            \"customer_name\": \"carolynmiller\",\n            \"grand_total\": \"9461.84\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        },\n        {\n            \"id\": 76,\n            \"customer_name\": \"lisa08\",\n            \"grand_total\": \"6086.84\",\n            \"status\": \"pending\",\n            \"created_at\": \"2025-06-30 20:43:21\"\n        }\n    ],\n    \"status\": true,\n    \"other\": null,\n    \"message\": \"Retrieved Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get order details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDIsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE0OCJ9.CFThAT7fwdFmX0FmnbWQeoE9oe3GQovV-MPqF05x844",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/110/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"110",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get order details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDIsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE0OCJ9.CFThAT7fwdFmX0FmnbWQeoE9oe3GQovV-MPqF05x844",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/orders/110/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"orders",
+										"110",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 01 Jul 2025 19:30:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "269"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 110,\n    \"customer_name\": \"leepatrick\",\n    \"grand_total\": \"7061.17\",\n    \"status\": \"pending\",\n    \"created_at\": \"2025-07-01 19:28:37\",\n    \"items\": [\n        {\n            \"id\": 305,\n            \"product_name\": \"Require\",\n            \"quantity\": 5,\n            \"unit_price\": \"843.55\"\n        },\n        {\n            \"id\": 306,\n            \"product_name\": \"Pretty\",\n            \"quantity\": 2,\n            \"unit_price\": \"1421.71\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "create order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{vault:json-web-token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customer_id\": 14,\n    \"items\": [\n        {\n            \"product_id\": 51,\n            \"quantity\": 5\n        },\n        {\n            \"product_id\": 50,\n            \"quantity\": 2\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDMsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE5NyJ9.INBpcHHOpMGBx6jIRRGZku4vN3pykKllJGD9glbDy9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customer_id\": 14,\n    \"items\": [\n        {\n            \"product_id\": 51,\n            \"quantity\": 5\n        },\n        {\n            \"product_id\": 50,\n            \"quantity\": 2\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/orders/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"orders",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 01 Jul 2025 17:32:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "327"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": {\n        \"id\": 109,\n        \"customer_name\": \"leepatrick\",\n        \"grand_total\": \"7061.17\",\n        \"status\": \"pending\",\n        \"created_at\": \"2025-07-01 17:32:27\",\n        \"items\": [\n            {\n                \"id\": 303,\n                \"product_name\": \"Require\",\n                \"quantity\": 5,\n                \"unit_price\": \"843.55\"\n            },\n            {\n                \"id\": 304,\n                \"product_name\": \"Pretty\",\n                \"quantity\": 2,\n                \"unit_price\": \"1421.71\"\n            }\n        ]\n    },\n    \"message\": \"created successfully\",\n    \"status\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDMsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE5NyJ9.INBpcHHOpMGBx6jIRRGZku4vN3pykKllJGD9glbDy9Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/?search=how",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								""
+							],
+							"query": [
+								{
+									"key": "page_size",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "how",
+									"description": "search by product name"
+								},
+								{
+									"key": "category_id",
+									"value": "3",
+									"description": "filter by category id",
+									"disabled": true
+								},
+								{
+									"key": "category_name",
+									"value": "books",
+									"description": "filter by category name",
+									"disabled": true
+								},
+								{
+									"key": "ordering",
+									"value": "price",
+									"description": "order by price ASC",
+									"disabled": true
+								},
+								{
+									"key": "ordering ",
+									"value": "-price",
+									"description": "order by price DESC",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDMsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE5NyJ9.INBpcHHOpMGBx6jIRRGZku4vN3pykKllJGD9glbDy9Q",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products/?search=how",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										""
+									],
+									"query": [
+										{
+											"key": "page_size",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "how",
+											"description": "search by product name"
+										},
+										{
+											"key": "category_id",
+											"value": "3",
+											"description": "filter by category id",
+											"disabled": true
+										},
+										{
+											"key": "category_name",
+											"value": "books",
+											"description": "filter by category name",
+											"disabled": true
+										},
+										{
+											"key": "ordering",
+											"value": "price",
+											"description": "order by price ASC",
+											"disabled": true
+										},
+										{
+											"key": "ordering ",
+											"value": "-price",
+											"description": "order by price DESC",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 01 Jul 2025 17:31:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "351"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"next\": null,\n    \"previous\": null,\n    \"count\": 2,\n    \"num_pages\": 1,\n    \"current_page\": 1,\n    \"result\": [\n        {\n            \"id\": 52,\n            \"name\": \"However\",\n            \"price\": \"1342.29\",\n            \"inventory_count\": 61,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Electronics\"\n            }\n        },\n        {\n            \"id\": 10,\n            \"name\": \"How\",\n            \"price\": \"1177.98\",\n            \"inventory_count\": 42,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Furniture\"\n            }\n        }\n    ],\n    \"status\": true,\n    \"other\": null,\n    \"message\": \"Retrieved Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_phone",
+									"value": "01024245197",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "mohamed88",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/signup/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"signup",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_phone",
+											"value": "01024245197",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "mohamed88",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/signup/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"signup",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 01 Jul 2025 17:35:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"User created successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_phone",
+									"value": "01024245197",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_phone",
+											"value": "01024245197",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 01 Jul 2025 19:29:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.12"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "190"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMDMsInVzZXJfcGhvbmUiOiIwMTAyNDI0NTE5NyJ9.INBpcHHOpMGBx6jIRRGZku4vN3pykKllJGD9glbDy9Q\",\n    \"user_id\": 103,\n    \"user_phone\": \"01024245197\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
