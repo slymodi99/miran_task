@@ -16,6 +16,11 @@ class Order(Timestamps):
     status = models.CharField(max_length=100, choices=STATUS_CHOICES, default='pending')
     grand_total = models.DecimalField(max_digits=10, decimal_places=2)
 
+    class Meta:
+        indexes = [
+            models.Index(fields=['customer_id', 'status'], name='order_customer_status_idx'),
+        ]
+
     def __str__(self):
         return str(self.id)
 

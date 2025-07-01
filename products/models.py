@@ -16,5 +16,10 @@ class Product(Timestamps):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, related_name='products')
     inventory_count = models.IntegerField()
 
+    class Meta:
+        indexes = [
+            models.Index(fields=['name', 'price'], name='product_name_price_idx'),
+        ]
+
     def __str__(self):
         return self.name
